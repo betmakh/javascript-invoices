@@ -1,0 +1,13 @@
+<h1>Products</h1>
+<table class="table table-striped">
+  <tr>
+    <th>Product ID</th>
+    <th>Name</th>
+    <th>Price</th>
+  </tr>
+  <tr ng-repeat="product in products track by product.id">
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.price | currency }}</td>
+  </tr>
+</table>
